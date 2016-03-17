@@ -112,6 +112,12 @@
         color:#999898;
         margin-bottom:3px;
     }
+    .medium {
+        line-height:14px;
+        font-size:16px;
+        color:#999898;
+        margin-bottom:3px;
+    }
 </style>
 <body>
     <div id="wrapper">
@@ -133,10 +139,30 @@
                 <div>
                     <input type="email" name="email" placeholder="Email"/>
                 </div>
-                <div>
+                <!-- <div>
                     <div class="small">this textarea is just for test so you can see the placeholder working on textarea as well</div>
                     <textarea name="message" placeholder="Message"></textarea>
-                </div>    
+                </div>  -->
+                <div>
+                	<div class = "medium">Ingrese su sexo: </div><br>
+                	<form action="">
+					  <input type="radio" name="gender" value="male"> Masculino<br>
+					  <input type="radio" name="gender" value="female"> Femenino<br>
+					  <input type="radio" name="gender" value="other"> Otro
+					</form>
+                </div>
+                <div>
+                	<div class="medium">Indique sus intereses: </div><br>
+                	<form action="">
+					<input type="checkbox" name="vehicle" value="Bike">Deportes
+					<input type="checkbox" name="vehicle" value="Bike">Cine<br>
+					<input type="checkbox" name="vehicle" value="Bike">Arte
+					<input type="checkbox" name="vehicle" value="Bike">Musica<br>
+					<input type="checkbox" name="vehicle" value="Bike">Política
+					<input type="checkbox" name="vehicle" value="Car">Economía 
+					</form>
+                </div>  
+                 
                 <input type="submit" name="submit" value="ENVIAR"/>
             </fieldset>    
         </form>
